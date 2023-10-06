@@ -1,0 +1,62 @@
+### API-1
+POST http://localhost:3000/login/
+Content-type:application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+
+
+### API-2 get all states
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk2NTMzNTU2fQ.HmRB7zjcq9YJcnG8R1Twc4gA6otN3MvraG2vFMmBgvE
+
+### API-3 get state based on state ID
+GET http://localhost:3000/states/8/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk2NTMzNTU2fQ.HmRB7zjcq9YJcnG8R1Twc4gA6otN3MvraG2vFMmBgvE
+
+
+
+### API-4 create district
+post http://localhost:3000/districts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk2NTMzNTU2fQ.HmRB7zjcq9YJcnG8R1Twc4gA6otN3MvraG2vFMmBgvE
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+### API-5 get district based on ID
+GET http://localhost:3000/districts/322/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk2NTMzNTU2fQ.HmRB7zjcq9YJcnG8R1Twc4gA6otN3MvraG2vFMmBgvE
+
+
+### API-6 Delete district of ID
+DELETE http://localhost:3000/districts/320/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk2NTMzNTU2fQ.HmRB7zjcq9YJcnG8R1Twc4gA6otN3MvraG2vFMmBgvE
+
+### API-7 update district details of ID
+PUT http://localhost:3000/districts/322/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk2NTMzNTU2fQ.HmRB7zjcq9YJcnG8R1Twc4gA6otN3MvraG2vFMmBgvE
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+### API-8 get stats
+GET http://localhost:3000/states/3/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjk2NTMzNTU2fQ.HmRB7zjcq9YJcnG8R1Twc4gA6otN3MvraG2vFMmBgvE
+
